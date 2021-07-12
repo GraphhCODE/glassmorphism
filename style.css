@@ -1,0 +1,92 @@
+:root{
+    --bg-color : #3f81db;
+    --text-color : #ffffff;
+    --glow : #709ce2;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #3f81db;
+    font-family: 'Otomanopee One', sans-serif;
+}
+/* Parent card - Position */
+.card-parent{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+/* Card - Glassmorphism */ 
+.card {
+    width: 500px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    /* Glassmorphism */
+
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 20px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+/* Name tag - H2 */
+.card h2 {
+    color: white;
+}
+
+/* Tag under the title */
+.card p {
+    font-size: 16px;
+    color: white;
+}
+
+/* Center the avatar */
+.card img{
+    border: white 2px solid;
+    border-radius: 100%;
+}
+
+
+/* Background items */ 
+/* Position the items */
+#small-ball{
+    position: absolute;
+    margin-top: -20%;
+    margin-left: 37%;
+}
+
+#big-ball{
+    margin-top: -3%;
+    margin-left: 57%;
+}
+
+#square{
+    width: 100px;
+    height: 100px;
+    background-color: var(--glow);
+    transform: rotate(80deg);
+    margin-top: -7%;
+    margin-left: 35%;
+    opacity: 50%;
+    box-shadow: 2px 2px 2px 2px white;
+}
+
+/* Github page at the bottom */
+.github img{
+    width: 3%;
+    height: 3%;
+    margin-left: 48%;
+}
+
+.github img:hover{
+    cursor: pointer;
+    background-color: black;
+    border-radius: 100px;
+}
